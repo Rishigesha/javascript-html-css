@@ -1,0 +1,28 @@
+<script>
+let size=(parseInt(prompt("enter the Size:")))
+let a=[]
+for(let j=0;j<size;j++){
+         a[j] =parseInt(prompt("Enter the value:"))
+}
+for (let j=0;j<a.length;j++){
+    let  n=a[j]
+    let sum=0
+    let rem=0
+    let m=1
+    let s=n
+
+while(n>0){
+    rem=n%10
+    sum=sum+rem
+    m=m*rem
+   n=parseInt(n/10)
+}
+if(sum==m){
+    document.write(s+": spy number"+"<br>")
+}
+else{
+    document.write(s+": no spy number"+"<br>")
+}
+    }
+
+        </script>

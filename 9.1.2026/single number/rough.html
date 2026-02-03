@@ -1,0 +1,14 @@
+<script>
+    const mark =[ 100,95,6,77,99]
+    let pass= mark.filter (n=>n>=50) 
+    let fail = mark.filter (n=>n<50)
+    let total=pass.reduce((total ,n)=>total+n,0)
+    let failtotal =fail.reduce((failtotal ,n)=>failtotal+n,0)
+    let a=pass.length
+    let average=total/pass.length
+    document.write(pass +"<br>")
+    document.write(fail+"<br>")
+    document.write(total+"<br>")
+    document.write(failtotal+"<br>" )
+    document.write(average+"<br>" )
+</script>

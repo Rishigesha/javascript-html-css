@@ -1,0 +1,19 @@
+<script>
+for(var i=1;i<=100;i++){
+    var n=i
+var  r=0
+var o=n
+while(n>0){
+var r=(r*10+n%10)
+n=parseInt(n/10)
+}
+if (r==o)
+{
+    document.write(o+":"+" palindrome"+"<br>")
+}
+else
+{
+    document.write(o+":"+" not palindrome"+"<br>")
+}
+}
+</script>

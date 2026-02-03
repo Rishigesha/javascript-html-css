@@ -1,0 +1,31 @@
+<script>
+let size=(parseInt(prompt("enter the Size:")))
+let a=[]
+for(let j=0;j<size;j++){
+         a[j] =parseInt(prompt("enter the value :"))
+}
+for(let j=0;j<a.length;j++){
+    let n=a[j]
+    let sum=0
+    let s=n
+
+
+
+while(n>0){
+    rem=n%10
+    sum=sum+rem
+    d=sum*sum
+    n=parseInt(n/10)
+}
+
+ 
+if(d==s){
+    document.write(s+": neon number"+"<br>")
+}
+else{
+    document.write(s+": no neon number"+"<br>")
+}
+    
+    }
+
+        </script>
