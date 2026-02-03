@@ -1,0 +1,25 @@
+<script>
+
+a =[3,6,7,59,90]
+for(var i=0;i<a.length;i++ ){
+    var n=a[i]
+    var sum=0
+    var rem=0
+    var m=1
+    var b=0
+    var s=n
+for(j=0 ;j<n;j++){
+    rem=n%10
+    sum=sum+rem
+    m=m*rem
+    b=m+sum
+   
+}
+if (b==s){
+    document.write(s+":special number"+"<br>")
+}
+else{
+    document.write(s+":no special number"+"<br>")
+}
+}  
+</script>

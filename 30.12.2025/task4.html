@@ -1,0 +1,17 @@
+<script>
+var n=parseInt(prompt("Enter the value:"))
+var  r=0
+var o=n
+while(n>0){
+var r=(r*10+n%10)
+n=parseInt(n/10)
+}
+if (r==o)
+{
+    document.write("palindrome")
+}
+else
+{
+    docuument.write("not palindrome")
+}
+</script>
