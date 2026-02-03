@@ -1,0 +1,22 @@
+<script>
+    var a=[ 6,112 ,22,123,9,100,101];
+    for(var j=0;j<a.length;j++){
+       var n=a[j]
+        var sum=0
+    var rem=0
+    var m=1
+    var s=n
+while(n>0){
+    rem=n%10
+    sum=sum+rem
+    m=m*rem
+   n=parseInt(n/10)
+}
+if(sum==m){
+    document.write(s+ " : spy number"+"<br>")
+}
+else{
+    document.write(s+" : no spy number"+"<br>")
+}
+    }
+</script>

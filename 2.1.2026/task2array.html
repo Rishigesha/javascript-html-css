@@ -1,0 +1,25 @@
+<script>
+    var a=[ 22,123,45,35,9,100,101];
+   
+    for(var j=0;j<a.length;j++){
+        var n=a[j];
+         var st=n
+         var sum=0;
+         var m=1
+         
+        
+        for (var i=1;i<n;i++){
+               rem=n%10
+               sum=sum+rem
+               
+               m=m*rem
+               n=parseInt(n/10)
+        }
+        if (sum==m){    
+            document.write( st+" : spy number"+"<br>")
+        }
+        else{
+            document.write( st+" : not spy number"+"<br>")
+        }
+    }
+    </script>

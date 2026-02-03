@@ -1,0 +1,24 @@
+<script>
+    var a=[ 6,59,45,35,9,100,101];
+    for(var j=0;j<a.length;j++){
+        var n=a[j];
+        var s=n
+        var sum=0;
+        var rem=0;
+        var m=1
+        var b=0
+        
+        for (var i=1;i<n;i++){
+               rem=n%10
+               sum=sum+rem
+               m=m*rem
+                b=m+sum
+        }
+        if (b==n){    
+            document.write(s+ " : special number"+"<br>")
+        }
+        else{
+            document.write(s+ " : not special number"+"<br>")
+        }
+    }
+    </script>
